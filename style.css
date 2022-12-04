@@ -179,8 +179,28 @@ iframe {
   margin-top: 30px;
 }
 
-.footer_open_day {
+.footer_open_day1 {
   margin-top: 5px;
+}
+
+.footer_open_day1_time {
+  margin-top: 1px;
+}
+
+.footer_open_day2 {
+  margin-top: 7px;
+}
+
+.footer_open_day2_time {
+  margin-top: 1px;
+}
+
+.tb_time {
+  margin-top: 5px;
+}
+
+.tb_space {
+  padding-left: 10px;
 }
 
 .footer_closed{
@@ -238,6 +258,7 @@ iframe {
     width: 100%;
     text-align: center;
     margin-top: 30px;
+    padding-left: 0px;
   }
   
   .owner_right h2{
