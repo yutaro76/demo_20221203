@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/76b499d0a6.js" crossorigin="anonymous"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="js/jquery.bgswitcher.js"></script>
+    <link rel="icon" href="img/favicon.ico" id="favicon">
+<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon-180x180.png">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+    jQuery(function($) {
+        $('.bg-slider').bgSwitcher({
+            images: ['img/image1-1.jpg','img/image1-2.jpg','img/image1-3.jpg'], // 切り替える背景画像を指定
+        });
+        $('.slider').slick({
+            autoplay: true, // 自動でスクロール
+            autoplaySpeed: 0, // 自動再生のスライド切り替えまでの時間を設定
+            speed: 9000, // スライドが流れる速度を設定
+            cssEase: "linear", // スライドの流れ方を等速に設定
+            slidesToShow: 4, // 表示するスライドの数
+            swipe: false, // 操作による切り替えはさせない
+            arrows: false, // 矢印非表示
+            pauseOnFocus: false, // スライダーをフォーカスした時にスライドを停止させるか
+            pauseOnHover: false, // スライダーにマウスホバーした時にスライドを停止させるか
+            responsive: [
+            {
+                breakpoint: 650,
+                settings: {
+                slidesToShow: 2, // 画面幅750px以下でスライド3枚表示
+                }
+            }
+            ]
+        });
+    });
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <title>Cebu Eatery</title>
+</head>
+<body>
+    <div class="bg-slider">
+        <!-- <a href="#"><p class="icon_left"><i class="fa-brands fa-facebook-f my_facebook"></i></p></a> -->
+        <a href="#"><p class="icon_right"><i class="fa-brands fa-instagram my_instagram"></i></p></a>
+        <h1 class="bg-slider__title">Cebu Eatery</h1>
+    </div>
+    <div class="message">
+        <div class="message_left">
+            <p>With Passion</p>
+        </div>
+        <div class="message_right">
+            <p>Lorem ipsum dolor sit, <br> amet consectetur adipisicing elit. <br> Cumque, quod.</p>
+        </div>
+    </div>
+    <div class="slider">
+        <div><img src="img/image2.jpg" alt=""></div>
+        <div><img src="img/image3.jpg" alt=""></div>
+        <div><img src="img/image2.jpg" alt=""></div>
+        <div><img src="img/image3.jpg" alt=""></div>
+        <div><img src="img/image2.jpg" alt=""></div>
+        <div><img src="img/image3.jpg" alt=""></div>
+    </div>
+    <div class="owner">
+        <div class="owner_left">
+            <img src="img/person.jpg" alt="person">
+        </div>
+        <div class="owner_right">
+            <h2>Sara California</h2>
+            <h5>Lorem ipsum dolor sit amet, <br> <br> <br>consectetur adipisicing elit. <br> <br> <br>Iusto impedit cumque veritatis, <br> <br> <br>consectetur odit perspiciatis?</h5>
+        </div>
+    </div>
+    <div class="map">
+        <p>Access</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.312528759178!2d123.88844491483432!3d10.316854170328904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a9994a05f889e3%3A0x4d28437e6dd3c9d!2sCebu%20Provincial%20Capitol!5e0!3m2!1sen!2sph!4v1670041446672!5m2!1sen!2sph" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="footer">
+        <p class="footer_title">Cebu Eatery</p>
+        <p class="footer_address">N. Escario St, cor Gov. M. Roa St, Cebu City, 6000</p>
+        <p class="footer_tel">Tel 0912345678</p>
+        <p class="footer_open">Open</p>
+        <p class="footer_open_day">Mon - Fri &nbsp;&nbsp; 8:00 AM - 5:00 PM <br> Sat &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 7:00 AM - 6:00 PM</p>
+        <p class="footer_closed">Closed</p>
+        <p class="footer_closed_day">Sun</p>
+        <br><br>
+        <p class="footer_copy">&copy;Cebu Eatery</p>
+    </div>
+    
+</body>
+</html>
